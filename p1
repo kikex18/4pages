@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+    
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"> <!-- Estilo de Tabla Responsive -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/filtro.js"></script> <!-- Funcionalidad para el Filtro-->
+    
+
+	<style type="text/css">
+	.mdl-card{width: 37%;}
+	</style>
+    
+
+  </head>
+
+  <body>
+
+
+   <div class="mdl-card mdl-shadow--2dp">
+	  <div class="mdl-card__title">
+	    <h2 class="mdl-card__title-text">Contenido</h2>
+	  </div>
+	  <div class="mdl-card__supporting-text">
+	  	<form action="#">
+		  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    <input class="filtro mdl-textfield__input" type="search" id="filtrar1" data-table="order-table" />
+		    <label class="mdl-textfield__label" for="filtrar1">Búsqueda...</label>
+		  </div>
+		</form>
+		<div class="table-responsive">
+			<table class="order-table mdl-data-table mdl-js-data-table table " width="100%">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Nombre</th>
+								<th>E-Mail</th>
+								<th>Sucursales</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1215</td>
+								<td>John Perez</td>
+								<td>john_perez@gmail.com</td>
+								<td>CA, DMO</td>
+							</tr>
+							<tr>
+								<td>2014</td>
+								<td>Jose Perez</td>
+								<td>jose_perez@gmail.com</td>
+								<td>CA, DMO</td>
+							</tr>
+							<tr>
+								<td>0012</td>
+								<td>Juan Perez</td>
+								<td>juan_perez@gmail.com</td>
+								<td>CA, DMO</td>
+							</tr>
+							<tr>
+								<td>1515</td>
+								<td>Hector Perez</td>
+								<td>juan_perez@gmail.com</td>
+								<td>CA, DMO</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+
+	  </div>
+
+	 <div class="mdl-card__actions mdl-card--border">
+	    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+	     Acción
+	    </a>
+	  </div>
+  </div>
+    
+    
+    
+  </body>
+
+
+</html>
